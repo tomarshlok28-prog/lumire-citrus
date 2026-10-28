@@ -30,6 +30,7 @@
       --lime: #dce7a8;
       --sun: #f2c64f;
       --rust: #c96a43;
+      --orange: #d65f2e;
       --line: rgba(32, 61, 45, .2);
       --serif: "Playfair Display", Georgia, serif;
       --sans: "DM Sans", sans-serif;
@@ -45,8 +46,8 @@
     .nav-links { display: flex; align-items: center; gap: 29px; font-size: 12px; }
     .nav-links a, .text-link { transition: opacity .2s ease; }
     .nav-links a:hover, .text-link:hover { opacity: .58; }
-    .wordmark { text-align: center; font-family: var(--serif); font-size: 25px; letter-spacing: 0; line-height: 1; white-space: nowrap; }
-    .wordmark span { color: var(--rust); }
+    .wordmark { color: #10110f; text-align: center; font-family: var(--serif); font-size: 25px; letter-spacing: 0; line-height: 1; white-space: nowrap; }
+    .wordmark span { color: inherit; }
     .header-actions { display: flex; justify-content: flex-end; align-items: center; gap: 22px; font-size: 12px; }
     .bag-button, .menu-button { border: 0; background: none; cursor: pointer; padding: 8px 0; }
     .bag-button span { display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: 5px; border-radius: 50%; background: var(--sun); font-size: 10px; }
@@ -60,6 +61,8 @@
     .hero-copy > p:not(.eyebrow) { max-width: 375px; margin-bottom: 27px; color: #526555; font-size: 14px; line-height: 1.8; }
     .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 18px; padding: 0 21px; border: 1px solid var(--green); background: var(--green); color: #fffdf6; font-size: 11px; font-weight: 600; letter-spacing: .04em; cursor: pointer; transition: background .2s ease, color .2s ease, transform .2s ease; }
     .button:hover { background: transparent; color: var(--green); transform: translateY(-2px); }
+    .hero-copy .button { border-color: var(--orange); background: var(--orange); }
+    .hero-copy .button:hover { color: var(--orange); }
     .button .arrow { font-size: 17px; line-height: 0; }
     .hero-note { display: flex; align-items: center; gap: 11px; margin-top: 39px; color: #5b6d5f; font-size: 10px; letter-spacing: .04em; }
     .hero-note::before { width: 35px; height: 1px; background: var(--rust); content: ""; }
@@ -121,7 +124,7 @@
     .form-message { min-height: 18px; margin: 10px 0 0; font-size: 11px; }
     footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 28px 5.2%; background: var(--green-dark); color: #fff9eb; font-size: 10px; }
     footer .wordmark { font-size: 20px; }
-    footer .wordmark span { color: var(--sun); }
+    footer .wordmark span { color: #10110f; }
     .footer-links { display: flex; gap: 20px; }
     .toast { position: fixed; right: 22px; bottom: 22px; z-index: 5; max-width: calc(100vw - 44px); padding: 15px 19px; background: var(--green-dark); color: #fff9eb; font-size: 12px; opacity: 0; pointer-events: none; transform: translateY(10px); transition: opacity .2s ease, transform .2s ease; }
     .toast.visible { opacity: 1; transform: translateY(0); }
@@ -244,7 +247,7 @@
         <div class="hero-note">Plant-powered. People-first. Always a little sunny.</div>
       </div>
       <div class="hero-image-wrap">
-        <img class="hero-image" src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1400&q=88" alt="Natural skincare and botanical ingredients arranged in warm sunlight" fetchpriority="high">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=1400&q=88" alt="Handmade botanical soap bars wrapped in kraft paper with lavender" fetchpriority="high">
         <div class="image-caption"><strong>100%</strong><span>good mood ingredients</span></div>
       </div>
     </section>
